@@ -1,13 +1,17 @@
 import './App.css'
-import './sections/hero'
-import './sections/about'
-import './sections/work_process'
-import './sections/contact'
+import About from './Components/About'
+// import Contact from './Components/Contact'
+// import WorkProcess from './Components/WorkProcess'
+import Hero from './Components/Hero'
 
 function App() {
 
   return (
     <>
+      <Hero />
+      <About />
+      {/* <WorkProcess />
+      <Contact /> */}
     </>
 
   )
