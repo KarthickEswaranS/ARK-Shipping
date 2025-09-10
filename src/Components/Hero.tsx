@@ -200,8 +200,8 @@ const Hero = () => {
     ]
 
     return (
-        <section className="w-screen h-screen">
-            <div className="w-full h-full p-[32px] border border-black">
+        <>
+            <div className="w-full ">
                 {/* nav logo */}
                 <nav className="w-full">
                     <div className="w-[200px] h-[70px] drop-shadow-xl/30 hover:scale-105 transition-all duration-300">
@@ -209,37 +209,37 @@ const Hero = () => {
                     </div>
                 </nav>
 
-                <div className="w-full h-[88%] flex justify-between relative my-4">
-                    <div className="w-[60%] grid grid-cols-2 auto-rows-[170px] gap-8">
+                <div className="w-full h-full flex gap-8 justify-center relative mt-18">
+                    <div className="w-[55%] grid grid-cols-2 auto-rows-[170px] gap-8">
 
-                        <div className="absolute top-[40%] left-[9%] z-10 text-white text-center">
+                        <div className="absolute top-[45%] left-[10%] z-10 text-white text-center">
                             <h1 className="text-5xl font-bold italic drop-shadow-xl/75 grayscale-50">ARK SHIPPING SERVICE</h1>
                             <h2 className="text-2xl text-center drop-shadow-xl/75 grayscale-50 ">Delivering Confidence Beyond Logistics</h2>
                         </div>
 
                         <div className="relative row-span-2 bg-blue-900 rounded-2xl drop-shadow-xl/75 hover:scale-105 transition-all duration-300">
-                            <p className="absolute top-[3%] right-[3%] text-3xl font-bold italic text-white/45 drop-shadow-xl/75">Sea Ways</p>
+                            <p className="absolute top-[3%] right-[3%] text-xl font-bold italic text-white/45 drop-shadow-xl/75">Sea Ways</p>
                             <img className="w-full h-full object-cover rounded-xl" src="./images/img4.jpeg" />
                         </div>
 
                         <div className="relative bg-blue-600 rounded-2xl drop-shadow-xl/75 hover:scale-110 transition-all duration-300">
-                            <p className="absolute top-[3%] right-[3%] text-3xl font-bold italic text-white/45 drop-shadow-xl/75">Customs Clearance</p>
+                            <p className="absolute top-[3%] right-[3%] text-xl font-bold italic text-white/45 drop-shadow-xl/75">Customs Clearance</p>
                             <img className="w-full h-full object-cover rounded-xl" src="./images/img6.jpg" />
                         </div>
 
                         <div className="relative row-span-2 bg-blue-800 rounded-2xl drop-shadow-xl/75 hover:black-sky-700 hover:scale-108 transition-all duration-300">
-                            <p className="absolute top-[3%] right-[3%] text-3xl font-bold italic text-white/45 drop-shadow-xl/75">Road Ways</p>
+                            <p className="absolute top-[3%] right-[3%] text-xl font-bold italic text-white/45 drop-shadow-xl/75">Road Ways</p>
                             <img className="w-full h-full object-fill rounded-xl" src="./images/img3.jpg" />
                         </div>
 
                         <div className="relative bg-blue-700 rounded-2xl drop-shadow-xl/75 hover:scale-112 transition-all duration-300">
-                            <p className="absolute top-[3%] right-[3%] text-3xl font-bold italic text-white/45 drop-shadow-xl/75">Air Ways</p>
+                            <p className="absolute top-[3%] right-[3%] text-xl font-bold italic text-white/45 drop-shadow-xl/75">Air Ways</p>
                             <img className="w-full h-full object-cover object-top rounded-xl" src="./images/img1.jpg" />
                         </div>
                     </div>
 
                     {/* Get Quotes area */}
-                    <div className="w-[37%] bg-[#14506f] rounded-2xl p-[16px] drop-shadow-xl/75">
+                    <div className="w-[35%] bg-[#14506f] rounded-2xl p-[16px] drop-shadow-xl/75">
                         <h1 className="text-white text-4xl font-semi-bold text-center">Get quote</h1>
                         <div className="w-[80%] mx-auto">
                             <form className="flex flex-col gap-4 mt-4 text-white justify-center">
@@ -287,7 +287,7 @@ const Hero = () => {
                 </div>
             </div>
 
-        </section >
+        </ >
 
     )
 }
