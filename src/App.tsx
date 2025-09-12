@@ -1,14 +1,20 @@
 import './App.css'
-import './sections/hero'
-import './sections/about'
-import './sections/work_process'
-import './sections/contact'
+import About from './Components/About'
+import Contact from './Components/Contact'
+import WorkProcess from './Components/WorkProcess'
+import Hero from './Components/Hero'
+import Services from './Components/Services'
 
 function App() {
 
   return (
-    <>
-    </>
+    <section className="w-dvw flex flex-col relative justify-center items-center ">
+      <Hero />
+      <About />
+      <Services />
+      <WorkProcess />
+      <Contact />
+    </section>
 
   )
 }

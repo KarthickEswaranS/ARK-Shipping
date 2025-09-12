@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&family=Rubik:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-h1: "Urbanist", sans-serif;
+  --font-p: "Rubik", sans-serif;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  overflow-y: auto; /* Allow vertical scrollbar only when needed */
+}
+/* Hide scrollbar for Chrome, Safari, and Edge */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+/* Optional: Ensure smooth scrolling */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.text-gradient-h1 {
+  background: linear-gradient(360deg, #14506f, #ffffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.text-gradient-h2 {
+  background: linear-gradient(360deg, #ff5e00d4, #ffffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.text-gradient-h3 {
+  background: linear-gradient(360deg, #ff5e00d4, #00000091);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

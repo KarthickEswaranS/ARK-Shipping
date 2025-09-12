@@ -8,6 +8,9 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  build: {
+    outDir: 'build',
+  },
   server: {
     watch: {
       usePolling: true // Set to true if file changes aren’t detected (e.g., in WSL or network drives)
