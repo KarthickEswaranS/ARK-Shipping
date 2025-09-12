@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "homepage": "https://KarthickEswaran.github.io/ARK-Shipping",
+=======
+  "homepage": "https://karthickeswarans.github.io/ARK-Shipping",
+>>>>>>> f17bbe4 (Add GitHub Pages deployment configuration)
   "name": "ark-shipping",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +13,11 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+<<<<<<< HEAD
     "preDeploy": "npm run build",
+=======
+    "predeploy": "npm run build",
+>>>>>>> f17bbe4 (Add GitHub Pages deployment configuration)
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
