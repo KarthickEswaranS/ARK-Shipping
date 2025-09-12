@@ -1,62 +1,66 @@
 
 const About = () => {
 
-    const services = [
-        { id: 1, name: "Air Freight" },
-        { id: 2, name: "Sea Freight" },
-        { id: 3, name: "Breakbulk" },
-        { id: 4, name: "Customs Clearance" },
-        { id: 5, name: "RORO" },
-        { id: 6, name: "Land Freight" },
-        { id: 7, name: "Documenting Process" },
-        { id: 8, name: "Warehousing & Distribution" },
-        { id: 9, name: "Project & Heaby Lift" },
-        { id: 10, name: "Exihibition & Event" },
-        { id: 11, name: "Packing & Removals" },
-
-    ];
 
     return (
-        <>
 
-            <div className="w-full mt-32">
-                <div className="w-full flex justify-evenly">
+        <div className="w-dvw mt-[3rem] px-[1rem] z-10 flex flex-col gap-8 
+        md:flex-row md:px-[1.5rem]
+        lg:justify-evenly">
 
-                    {/* About Text */}
-                    <div className="w-[55%]">
-                        <h1 className="text-8xl font-bold mb-4">About</h1>
-                        <h2 className="text-3xl font-bold mb-4">ARK Shipping Services</h2>
-                        <p className="text-lg text-justify">
-                            ARK Shipping Services has diversified its traditional freight forwarding activities into a fully integrated logistics provider and is equally evolved in air, sea and land freight operations.
-                            The company has grown significantly over a year till today as one of the well-trusted logistics provider in Tuticorin.
-                            ARK Shipping Services aims to provide quality services and strives to build and maintain relationship with customers.
-                            Customers can be assured that ARK Shipping Services will be highly committed in offering efficient, prompt and value for money services.
-                        </p>
-                    </div>
-
-                    {/* image */}
-                    <div className="w-[30%]">
-                        <img className=" object-cover rounded-xl" src="./images/img3.jpg" />
-                    </div>
-
+            {/* About Text */}
+            <div className="w-full md:w-[45%] lg:w-[50%]">
+                <h1 className="font-bold font-h1 text-gradient-h3 text-6xl mb-2 
+                lg:text-8xl lg:mb-6">About</h1>
+                <h2 className="font-bold font-h1 text-gradient-h3 mb-2 text-2xl
+                lg:text-5xl lg:mb-6">ARK Shipping Services</h2>
+                <p className="font-p text-black/75 text-sm
+                lg:text-xl
+                ">
+                    ARK Shipping Services has diversified its traditional freight forwarding activities into a fully integrated logistics provider and is equally evolved in air, sea and land freight operations.
+                    The company has grown significantly over a year till today as one of the well-trusted logistics provider in Tuticorin.
+                    ARK Shipping Services aims to provide quality services and strives to build and maintain relationship with customers.
+                    Customers can be assured that ARK Shipping Services will be highly committed in offering efficient, prompt and value for money services.
+                </p>
+                <div className="w-full justify-start flex mt-6">
+                    <button className="w-[50%] text-lg items-center bg-[#ff5c00] text-white font-bold font-p p-3 rounded-lg hover:bg-gray-800 transition-all duration-300" type="submit">Know More</button>
                 </div>
             </div>
 
-            <div className="w-full mt-32">
-                <h1 className="text-8xl text-center font-bold mb-16">Services</h1>
-                <div className=" flex gap-2 overflow-x-auto ">
-                    {/* image */}
-                    {
-                        services.map((service, i) => (
-                            <div className="w-80 h-64 bg-blue-500 rounded-xl p-8" key={i}>
-                                <h1>{service.name}</h1>
-                            </div>
-                        ))
-                    }
+            {/* image */}
 
+            <div className="w-full grid auto-rows-[170px] gap-8
+                    md:w-[50%] md:h-full md:grid-cols-2 md:mt-[2rem]
+                    lg:w-[44%] lg:mt-[0rem]
+                    ">
+
+                <div className="relative xl:row-span-2 bg-blue-900 rounded-2xl drop-shadow-xl/75 hover:scale-105 transition-all duration-300
+                        xl:mask-b-from-50% md:bg-[url(/images/img4.jpg)]">
+                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic text-white/45 drop-shadow-xl/75">Sea Ways</p>
+                    <img className="w-full h-full object-cover rounded-xl" src="./images/img4.jpeg" />
+                </div>
+
+                <div className="relative bg-blue-600 rounded-2xl drop-shadow-xl/75 hover:scale-110 transition-all duration-300
+                         xl:mask-b-from-50% md:bg-[url(/images/img6.jpg)]">
+                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic text-white/45 drop-shadow-xl/75">Customs Clearance</p>
+                    <img className="w-full h-full object-cover rounded-xl" src="./images/img6.jpg" />
+                </div>
+
+                <div className="relative xl:row-span-2 bg-blue-800 rounded-2xl drop-shadow-xl/75 hover:black-sky-700 hover:scale-108 transition-all duration-300
+                        xl:mask-b-from-50% md:bg-[url(/images/img3.jpg)]">
+                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic text-white/45 drop-shadow-xl/75">Road Ways</p>
+                    <img className="w-full h-full object-fill rounded-xl" src="./images/img3.jpg" />
+                </div>
+
+                <div className="relative bg-blue-700 rounded-2xl drop-shadow-xl/75 hover:scale-112 transition-all duration-300
+                        xl:mask-b-from-50% md:bg-[url(/images/img3.jpg)]">
+                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic text-white/45 drop-shadow-xl/75">Air Ways</p>
+                    <img className="w-full h-full object-cover object-top rounded-xl" src="./images/img1.jpg" />
                 </div>
             </div>
-        </>
+        </div>
+
+
 
     )
 }

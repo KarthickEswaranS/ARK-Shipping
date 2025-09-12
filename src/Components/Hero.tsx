@@ -1,5 +1,7 @@
 
+
 const Hero = () => {
+
     const countries = [
         "Afghanistan",
         "Albania",
@@ -200,94 +202,85 @@ const Hero = () => {
     ]
 
     return (
-        <>
-            <div className="w-full ">
-                {/* nav logo */}
-                <nav className="w-full">
-                    <div className="w-[200px] h-[70px] drop-shadow-xl/30 hover:scale-105 transition-all duration-300">
-                        <img className="w-full rounded-xl" src="/resized.jpg" alt="ARK logo" />
-                    </div>
-                </nav>
 
-                <div className="w-full h-full flex gap-8 justify-center relative mt-18">
-                    <div className="w-[55%] grid grid-cols-2 auto-rows-[170px] gap-8">
+        <div className="w-dvw h-dvh px-[1rem] pt-[1rem] 
+        md:px-[1.5rem] lg:px-[5rem]">
 
-                        <div className="absolute top-[45%] left-[10%] z-10 text-white text-center">
-                            <h1 className="text-5xl font-bold italic drop-shadow-xl/75 grayscale-50">ARK SHIPPING SERVICE</h1>
-                            <h2 className="text-2xl text-center drop-shadow-xl/75 grayscale-50 ">Delivering Confidence Beyond Logistics</h2>
-                        </div>
+            {/* Background Image */}
+            <img className="w-full h-dvh object-cover absolute top-0 left-0 brightness-75"
+                src="./images/img13.jpg" alt="Hero Background" />
 
-                        <div className="relative row-span-2 bg-blue-900 rounded-2xl drop-shadow-xl/75 hover:scale-105 transition-all duration-300">
-                            <p className="absolute top-[3%] right-[3%] text-xl font-bold italic text-white/45 drop-shadow-xl/75">Sea Ways</p>
-                            <img className="w-full h-full object-cover rounded-xl" src="./images/img4.jpeg" />
-                        </div>
+            {/* nav logo */}
+            <nav className="w-full flex relative mt-[1rem]">
+                <div className="drop-shadow-xl/90">
+                    <img className="w-[3rem] h-[3rem] rounded-xl z-10" src="/images/logo.png" alt="ARK logo" />
+                </div>
+                <div className="absolute top-0 left-[20%] drop-shadow-xl/90 sm:hidden">
+                    <h1 className="text-gradient-h1 text-xl font-medium">ARK SHIPPING SERVICE</h1>
+                </div>
+            </nav>
 
-                        <div className="relative bg-blue-600 rounded-2xl drop-shadow-xl/75 hover:scale-110 transition-all duration-300">
-                            <p className="absolute top-[3%] right-[3%] text-xl font-bold italic text-white/45 drop-shadow-xl/75">Customs Clearance</p>
-                            <img className="w-full h-full object-cover rounded-xl" src="./images/img6.jpg" />
-                        </div>
+            <div className="w-full mt-[2rem] z-10 flex justify-center
+                md:gap-4 md:relative">
 
-                        <div className="relative row-span-2 bg-blue-800 rounded-2xl drop-shadow-xl/75 hover:black-sky-700 hover:scale-108 transition-all duration-300">
-                            <p className="absolute top-[3%] right-[3%] text-xl font-bold italic text-white/45 drop-shadow-xl/75">Road Ways</p>
-                            <img className="w-full h-full object-fill rounded-xl" src="./images/img3.jpg" />
-                        </div>
+                {/* Head lines */}
+                <div className="hidden 
+                    md:block md:w-[50%] md:mt-[4rem] md:text-center">
+                    <h1 className="text-3xl font-bold italic drop-shadow-xl/50 text-gradient-h1 font-h1 mb-3 xl:text-5xl">ARK SHIPPING SERVICE</h1>
+                    <h2 className="text-xl font-medium text-center drop-shadow-xl/50 text-gradient-h2 font-p xl:text-2xl">Delivering Confidence Beyond Logistics</h2>
+                </div>
 
-                        <div className="relative bg-blue-700 rounded-2xl drop-shadow-xl/75 hover:scale-112 transition-all duration-300">
-                            <p className="absolute top-[3%] right-[3%] text-xl font-bold italic text-white/45 drop-shadow-xl/75">Air Ways</p>
-                            <img className="w-full h-full object-cover object-top rounded-xl" src="./images/img1.jpg" />
-                        </div>
-                    </div>
+                {/* Get Quotes area */}
+                <div className="w-full bg-white/30 rounded-2xl p-[1rem] drop-shadow-xl 
+                    md:py-[1rem] md:px-[.5rem] md:w-[45%] lg:px-[1.5rem] lg:py-[2rem]">
+                    <h1 className="text-white text-3xl font-bold font-h1 text-center 
+                        md:text-3xl">Get quote</h1>
+                    <div className="w-full mx-auto md:px-[1rem] xl:w-[88%] ">
+                        <form className="flex flex-col gap-4 mt-4 text-white font-p justify-center">
+                            <div className="flex flex-col gap-1">
+                                <label className="text-white text-sm">Name</label>
+                                <input className="p-2 rounded-lg bg-white text-black" type="text" placeholder="Name" />
+                            </div>
 
-                    {/* Get Quotes area */}
-                    <div className="w-[35%] bg-[#14506f] rounded-2xl p-[16px] drop-shadow-xl/75">
-                        <h1 className="text-white text-4xl font-semi-bold text-center">Get quote</h1>
-                        <div className="w-[80%] mx-auto">
-                            <form className="flex flex-col gap-4 mt-4 text-white justify-center">
-                                <div className="flex flex-col gap-1">
-                                    <label className="text-white text-sm">Name</label>
-                                    <input className="p-2 rounded-lg bg-white text-black" type="text" placeholder="Name" />
+                            <div className="flex flex-col gap-1">
+                                <label className="text-white text-sm">Email Address</label>
+                                <input className="p-2 rounded-lg bg-white text-black" type="email" placeholder="Email" />
+                            </div>
+
+                            <div className="flex gap-2">
+                                <div className="flex flex-col gap-1 w-[30%]">
+                                    <label className="text-white text-sm">Country</label>
+                                    <select className="p-2 rounded-lg bg-white text-black/50">
+                                        <option value="Select">Select</option>
+                                        {
+                                            countries.map((country, i) => (
+                                                <option key={i} value={country}>{country}</option>
+                                            ))
+                                        }
+                                    </select>
                                 </div>
 
-                                <div className="flex flex-col gap-1">
-                                    <label className="text-white text-sm">Email Address</label>
-                                    <input className="p-2 rounded-lg bg-white text-black" type="email" placeholder="Email" />
+                                <div className="flex flex-col gap-1 w-[70%]">
+                                    <label className="text-white text-sm">Phone</label>
+                                    <input className="p-2 rounded-lg p-2 rounded-lg bg-white text-black" type="tel" placeholder="Phone Number" />
                                 </div>
+                            </div>
 
-                                <div className="flex gap-2">
-                                    <div className="flex flex-col gap-1 w-[30%]">
-                                        <label className="text-white text-sm">Country</label>
-                                        <select className="p-2 rounded-lg bg-white text-black/50">
-                                            <option value="Select">Select</option>
-                                            {
-                                                countries.map((country, i) => (
-                                                    <option key={i} value={country}>{country}</option>
-                                                ))
-                                            }
-                                        </select>
-                                    </div>
+                            <div className="flex flex-col gap-1">
+                                <label className="text-white text-sm">Message</label>
+                                <textarea className="p-2 rounded-lg p-2 rounded-lg bg-white text-black" placeholder="Additional Details" rows={4}></textarea>
+                            </div>
 
-                                    <div className="flex flex-col gap-1 w-[70%]">
-                                        <label className="text-white text-sm">Phone</label>
-                                        <input className="p-2 rounded-lg p-2 rounded-lg bg-white text-black" type="tel" placeholder="Phone Number" />
-                                    </div>
-                                </div>
+                            <div className="w-full justify-center flex mt-4">
+                                <button className="w-full items-center bg-[#ff5c00] text-white font-semi-bold p-3 rounded-lg hover:bg-gray-800 transition-all duration-300" type="submit">Submit</button>
+                            </div>
 
-                                <div className="flex flex-col gap-1">
-                                    <label className="text-white text-sm">Message</label>
-                                    <textarea className="p-2 rounded-lg p-2 rounded-lg bg-white text-black" placeholder="Additional Details" rows={4}></textarea>
-                                </div>
-
-                                <div className="w-full justify-center flex mt-4">
-                                    <button className="w-full items-center bg-[#ff5c00] text-white font-semi-bold p-3 rounded-lg hover:bg-gray-800 transition-all duration-300" type="submit">Submit</button>
-                                </div>
-
-                            </form>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
+        </div>
 
-        </ >
 
     )
 }
