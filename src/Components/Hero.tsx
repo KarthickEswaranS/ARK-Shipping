@@ -213,7 +213,9 @@ const Hero = () => {
             {/* nav logo */}
             <nav className="w-full flex relative mt-[1rem]">
                 <div className="drop-shadow-xl/90">
-                    <img className="w-[3rem] h-[3rem] rounded-xl z-10" src="/images/logo.png" alt="ARK logo" />
+                    <img className="w-[3rem] h-[3rem] rounded-xl z-10 md:hidden" src="/images/logo.png" alt="ARK logo" />
+                    <img className="w-[12rem] h-[4rem] rounded-xl z-10 hidden md:block" src="/images/logo.jpeg" alt="ARK logo" />
+
                 </div>
                 <div className="absolute top-0 left-[20%] drop-shadow-xl/90 sm:hidden">
                     <h1 className="text-gradient-h1 text-xl font-medium">ARK SHIPPING SERVICE</h1>

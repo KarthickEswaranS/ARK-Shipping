@@ -4,18 +4,18 @@ const About = () => {
 
     return (
 
-        <div className="w-dvw mt-[3rem] px-[1rem] z-10 flex flex-col gap-8 
+        <div className="w-dvw mt-[5rem] px-[1rem] z-10 flex flex-col gap-8 
         md:flex-row md:px-[1.5rem]
         lg:justify-evenly">
 
             {/* About Text */}
             <div className="w-full md:w-[45%] lg:w-[50%]">
-                <h1 className="font-bold font-h1 text-gradient-h3 text-6xl mb-2 
-                lg:text-8xl lg:mb-6">About</h1>
+                <h1 className="font-bold font-h1 text-gradient-h3 text-6xl mb-[1rem] 
+                lg:text-8xl lg:mb-9">About</h1>
                 <h2 className="font-bold font-h1 text-gradient-h3 mb-2 text-2xl
                 lg:text-5xl lg:mb-6">ARK Shipping Services</h2>
                 <p className="font-p text-black/75 text-sm
-                lg:text-xl
+                lg:text-lg
                 ">
                     ARK Shipping Services has diversified its traditional freight forwarding activities into a fully integrated logistics provider and is equally evolved in air, sea and land freight operations.
                     The company has grown significantly over a year till today as one of the well-trusted logistics provider in Tuticorin.
@@ -35,26 +35,26 @@ const About = () => {
                     ">
 
                 <div className="relative xl:row-span-2 bg-blue-900 rounded-2xl drop-shadow-xl/75 hover:scale-105 transition-all duration-300
-                        xl:mask-b-from-50% md:bg-[url(/images/img4.jpg)]">
-                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic text-white/45 drop-shadow-xl/75">Sea Ways</p>
+                        ">
+                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic text-black/50 drop-shadow-xl/75">Sea Ways</p>
                     <img className="w-full h-full object-cover rounded-xl" src="./images/img4.jpeg" />
                 </div>
 
                 <div className="relative bg-blue-600 rounded-2xl drop-shadow-xl/75 hover:scale-110 transition-all duration-300
-                         xl:mask-b-from-50% md:bg-[url(/images/img6.jpg)]">
-                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic text-white/45 drop-shadow-xl/75">Customs Clearance</p>
+                         ">
+                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic text-black/50 drop-shadow-xl/75">Customs Clearance</p>
                     <img className="w-full h-full object-cover rounded-xl" src="./images/img6.jpg" />
                 </div>
 
                 <div className="relative xl:row-span-2 bg-blue-800 rounded-2xl drop-shadow-xl/75 hover:black-sky-700 hover:scale-108 transition-all duration-300
-                        xl:mask-b-from-50% md:bg-[url(/images/img3.jpg)]">
-                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic text-white/45 drop-shadow-xl/75">Road Ways</p>
-                    <img className="w-full h-full object-fill rounded-xl" src="./images/img3.jpg" />
+                        ">
+                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic text-black/50 drop-shadow-xl/75">Road Ways</p>
+                    <img className="w-full h-full object-cover rounded-xl" src="./images/img3.jpg" />
                 </div>
 
                 <div className="relative bg-blue-700 rounded-2xl drop-shadow-xl/75 hover:scale-112 transition-all duration-300
-                        xl:mask-b-from-50% md:bg-[url(/images/img3.jpg)]">
-                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic text-white/45 drop-shadow-xl/75">Air Ways</p>
+                        ">
+                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic text-black/50 drop-shadow-xl/75">Air Ways</p>
                     <img className="w-full h-full object-cover object-top rounded-xl" src="./images/img1.jpg" />
                 </div>
             </div>
