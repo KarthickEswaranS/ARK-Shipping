@@ -1,11 +1,12 @@
 import './App.css'
 import About from './Components/About'
 import Contact from './Components/Contact'
-import WorkProcess from './Components/WorkProcess'
+// import WorkProcess from './Components/WorkProcess'
 import Hero from './Components/Hero'
 import Services from './Components/Services'
 import Why from './Components/Why'
 import { Counter } from './Components/Counter'
+import { Feedback } from './Components/Feedback'
 
 function App() {
 
@@ -14,9 +15,10 @@ function App() {
       <Hero />
       <About />
       <Services />
-      <WorkProcess />
+      {/* <WorkProcess /> */}
       <Why />
       <Counter />
+      <Feedback />
       <Contact />
 
     </section>

@@ -50,3 +50,10 @@ body {
   background-clip: text;
   text-fill-color: transparent;
 }
+
+.contact-bg {
+  background-image: url("images/img26.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}

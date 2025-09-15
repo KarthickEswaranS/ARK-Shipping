@@ -52,9 +52,9 @@ const Contact = () => {
 
     return (
 
-        <div className="bg-[#14506f] w-dvw mt-[3rem] px-[1rem] py-[1rem] z-10 flex flex-col gap-8 md:px-[1.5rem] lg:mt-[7rem] lg:pb-[4rem]">
+        <div className="contact-bg  w-dvw mt-[3rem] px-[1rem] py-[1rem]  flex flex-col gap-8 md:px-[1.5rem] lg:mt-[4rem] lg:pb-[4rem]">
 
-            <div className="grid grid-cols-1 mt-[2rem] md:grid-cols-3 lg:grid-cols-4 gap-6 text-white text-center">
+            <div className="grid grid-cols-1 mt-[2rem] md:grid-cols-3 lg:grid-cols-4 gap-6 text-white text-center z-10">
                 {/* Main Title and Tagline */}
                 <div className="flex flex-col gap-4 text-center">
                     <div className="w-full flex justify-center">

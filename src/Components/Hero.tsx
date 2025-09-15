@@ -201,40 +201,63 @@ const Hero = () => {
         "Zimbabwe"
     ]
 
+    const navs = [
+        { name: 'Home', link: '#home' },
+        { name: 'About', link: '' },
+        { name: 'Work Process', link: '#home' },
+        { name: 'Services', link: '#home' },
+        { name: 'Contact', link: '#home' },
+    ]
+
+    const buttons = ['Browser Services'];
     return (
 
         <div className="w-dvw h-dvh px-[1rem] pt-[1rem] 
         md:px-[1.5rem] lg:px-[5rem]">
 
             {/* Background Image */}
-            <img className="w-full h-dvh object-cover absolute top-0 left-0 brightness-75"
+            <img className="w-full h-dvh object-cover absolute top-0 left-0 brightness-[80%]"
                 src="./images/img13.jpg" alt="Hero Background" />
 
             {/* nav logo */}
-            <nav className="w-full flex relative mt-[1rem]">
-                <div className="drop-shadow-xl/90">
+            <nav className="w-full flex relative mt-[1rem] gap-70 items-center">
+                <div className="drop-shadow-xl/90 ms-12">
                     <img className="w-[3rem] h-[3rem] rounded-xl z-10 md:hidden" src="/images/logo.png" alt="ARK logo" />
-                    <img className="w-[12rem] h-[4rem] rounded-xl z-10 hidden md:block" src="/images/logo.jpeg" alt="ARK logo" />
-
+                    <img className="w-[11rem] h-[4rem]  rounded-xl z-10 hidden md:block" src="/images/logo.jpeg" alt="ARK logo" />
                 </div>
                 <div className="absolute top-0 left-[20%] drop-shadow-xl/90 sm:hidden">
                     <h1 className="text-gradient-h1 text-xl font-medium">ARK SHIPPING SERVICE</h1>
                 </div>
+                <div className="hidden md:block">
+                    <ul className="flex gap-12 justify-center ">
+                        {navs.map((nav, i) => (
+                            <li key={i} className="text-white/90 text-lg font-p hover:text-orange-500 cursor-pointer ">{nav.name}</li>
+                        ))}
+                    </ul>
+                </div>
             </nav>
 
-            <div className="w-full mt-[2rem] z-10 flex justify-center
-                md:gap-4 md:relative">
+            <div className="w-full mt-[2rem] z-10 flex justify-between   
+               md:relative">
 
                 {/* Head lines */}
-                <div className="hidden 
-                    md:block md:w-[50%] md:mt-[4rem] md:text-center">
-                    <h1 className="text-3xl font-bold italic drop-shadow-xl/50 text-gradient-h1 font-h1 mb-3 xl:text-5xl">ARK SHIPPING SERVICE</h1>
-                    <h2 className="text-xl font-medium text-center drop-shadow-xl/50 text-gradient-h2 font-p xl:text-2xl">Delivering Confidence Beyond Logistics</h2>
+                <div className="hidden px-5
+                    md:block md:w-[50%] md:mt-[7rem]  ">
+                    <h1 className="text-xl font-bold drop-shadow-xl/50 text-gradient-h1 font-h1 mb-1 underline decoration-white decoration-1 underline-offset-8 xl:text-5xl">ARK SHIPPING SERVICE</h1>
+                    <h2 className="text-xl font-medium drop-shadow-xl/50 text-gradient-h2 font-p xl:text-3xl">Delivering Confidence Beyond Logistics</h2>
+                    <p className="text-sm text-white mt-5 drop-shadow-xl/50 xl:text-lg">We have been operating for over a decade, providing top-notch services to our clients and building a strong track record.</p>
+                    <div className="w-full flex gap-10 mt-3 ">
+                        {
+                            buttons.map((button, i) => (
+                                <button key={i} className="px-6 py-1 text-lg items-center bg-[#ff5c00]/90  text-white font-medium font-p rounded-lg hover:bg-gray-700  transition-all duration-300" type="submit">{button}</button>
+                            ))
+                        }
+                    </div>
                 </div>
 
                 {/* Get Quotes area */}
-                <div className="w-full bg-white/30 rounded-2xl p-[1rem] drop-shadow-xl 
-                    md:py-[1rem] md:px-[.5rem] md:w-[45%] lg:px-[1.5rem] lg:py-[2rem]">
+                <div className="w-full bg-white/20 rounded-2xl p-[.5rem] drop-shadow-2xl
+                    md:py-[1rem] md:px-[.5rem] md:w-[35%] lg:px-[.5rem] lg:py-[2rem]">
                     <h1 className="text-white text-3xl font-bold font-h1 text-center 
                         md:text-3xl">Get quote</h1>
                     <div className="w-full mx-auto md:px-[1rem] xl:w-[88%] ">
@@ -274,7 +297,7 @@ const Hero = () => {
                             </div>
 
                             <div className="w-full justify-center flex mt-4">
-                                <button className="w-full items-center bg-[#ff5c00] text-white font-semi-bold p-3 rounded-lg hover:bg-gray-800 transition-all duration-300" type="submit">Submit</button>
+                                <button className="w-full items-center bg-[#ff5c00] text-white font-semibold p-3 rounded-lg hover:bg-gray-600 transition-all duration-300" type="submit">Get Quote</button>
                             </div>
 
                         </form>

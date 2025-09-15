@@ -4,9 +4,8 @@ const About = () => {
 
     return (
 
-        <div className="w-dvw mt-[5rem] px-[1rem] z-10 flex flex-col gap-8 
-        md:flex-row md:px-[1.5rem]
-        lg:justify-evenly">
+        <div className="w-dvw mt-[5rem] px-[1rem] z-10 flex flex-col justify-between
+        md:flex-row md:px-[1.5rem] lg:px-[5rem]">
 
             {/* About Text */}
             <div className="w-full md:w-[45%] lg:w-[50%]">
@@ -23,7 +22,7 @@ const About = () => {
                     Customers can be assured that ARK Shipping Services will be highly committed in offering efficient, prompt and value for money services.
                 </p>
                 <div className="w-full justify-start flex mt-6">
-                    <button className="w-[50%] text-lg items-center bg-[#ff5c00] text-white font-bold font-p p-3 rounded-lg hover:bg-gray-800 transition-all duration-300" type="submit">Know More</button>
+                    <button className="w-[50%] text-lg items-center bg-[#ff5c00] text-white font-bold font-p p-3 rounded-lg  hover:bg-gray-800 transition-all duration-300" type="submit">Know More</button>
                 </div>
             </div>
 
@@ -36,26 +35,28 @@ const About = () => {
 
                 <div className="relative xl:row-span-2 bg-blue-900 rounded-2xl drop-shadow-xl/75 hover:scale-105 transition-all duration-300
                         ">
-                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic text-black/50 drop-shadow-xl/75">Sea Ways</p>
-                    <img className="w-full h-full object-cover rounded-xl" src="./images/img4.jpeg" />
-                </div>
-
-                <div className="relative bg-blue-600 rounded-2xl drop-shadow-xl/75 hover:scale-110 transition-all duration-300
-                         ">
-                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic text-black/50 drop-shadow-xl/75">Customs Clearance</p>
-                    <img className="w-full h-full object-cover rounded-xl" src="./images/img6.jpg" />
-                </div>
-
-                <div className="relative xl:row-span-2 bg-blue-800 rounded-2xl drop-shadow-xl/75 hover:black-sky-700 hover:scale-108 transition-all duration-300
-                        ">
-                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic text-black/50 drop-shadow-xl/75">Road Ways</p>
-                    <img className="w-full h-full object-cover rounded-xl" src="./images/img3.jpg" />
+                    <p className="absolute top-[3%] right-[3%] text-xl  font-h1 italic font-semibold text-white/92 z-10 me-3">Sea Ways</p>
+                    <img className="w-full h-full object-cover rounded-xl brightness-[90%]" src="./images/img4.jpeg" />
                 </div>
 
                 <div className="relative bg-blue-700 rounded-2xl drop-shadow-xl/75 hover:scale-112 transition-all duration-300
                         ">
-                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic text-black/50 drop-shadow-xl/75">Air Ways</p>
-                    <img className="w-full h-full object-cover object-top rounded-xl" src="./images/img1.jpg" />
+                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic font-semibold text-white/92 z-10 me-3">Air Ways</p>
+                    <img className="w-full h-full object-cover object-top rounded-xl brightness-[90%]" src="./images/img1.jpg" />
+                </div>
+
+                <div className="relative xl:row-span-2 bg-blue-800 rounded-2xl drop-shadow-xl/75 hover:black-sky-700 hover:scale-108 transition-all duration-300
+                        ">
+                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 italic font-semibold text-white/92 z-10 me-3">Road Ways</p>
+                    <img className="w-full h-full object-cover rounded-xl brightness-[90%]" src="./images/img3.jpg" />
+                </div>
+
+
+
+                <div className="relative bg-blue-600 rounded-2xl drop-shadow-xl/75 hover:scale-110 transition-all duration-300
+                         ">
+                    <p className="absolute top-[3%] right-[3%] text-xl font-bold font-h1 font-semibold text-white/92 text-white z-10 me-3">Customs Clearance</p>
+                    <img className="w-full h-full object-cover rounded-xl brightness-[90%]" src="./images/img6.jpg" />
                 </div>
             </div>
         </div>
