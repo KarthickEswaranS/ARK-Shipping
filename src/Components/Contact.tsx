@@ -52,9 +52,11 @@ const Contact = () => {
 
     return (
 
-        <div className="contact-bg  w-dvw mt-[3rem] px-[1rem] py-[1rem]  flex flex-col gap-8 md:px-[1.5rem] lg:mt-[4rem] lg:pb-[4rem]">
+        <div className="bg-linear-to-b from-gray-700  to-zinc-500  w-dvw mt-[3rem] px-[1rem] py-[1rem]  flex flex-col gap-8 md:px-[1.5rem] lg:mt-[4rem] lg:pb-[4rem] relative">
 
             <div className="grid grid-cols-1 mt-[2rem] md:grid-cols-3 lg:grid-cols-4 gap-6 text-white text-center z-10">
+                {/* <img src="images/img22.jpg" className=' brightness-[50%] object-cover' /> */}
+
                 {/* Main Title and Tagline */}
                 <div className="flex flex-col gap-4 text-center">
                     <div className="w-full flex justify-center">
